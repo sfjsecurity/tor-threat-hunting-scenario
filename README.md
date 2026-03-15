@@ -124,12 +124,6 @@ DeviceNetworkEvents
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\labusersj\Desktop\tor-shopping-list.txt`
 
-### 7. File Deletion - Shopping List Removed
-- **Timestamp:** `[TIMESTAMP]`
-- **Event:** `labusersj` deleted `tor-shopping-list.txt` from the desktop shortly after its creation, indicating a deliberate attempt to remove evidence of the activity.
-- **Action:** File deletion detected.
-- **File Path:** `C:\Users\labusersj\Desktop\tor-shopping-list.txt`
-
 ---
 
 ## Summary
