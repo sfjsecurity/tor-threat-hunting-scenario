@@ -39,16 +39,16 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Filtered process events by the TOR installer filename to identify execution activity. At `[TIMESTAMP]`, `labusersj` was found to have launched `tor-browser-windows-x86_64-portable-15.0.7.exe` directly from the Downloads folder. The command used included a silent install flag, meaning the installation ran in the background without any visible prompts.
+Filtered process events by the TOR installer filename to identify execution activity. At `2026-03-15T14:14:45.7704252Z`, `labusersj` was found to have launched `tor-browser-windows-x86_64-portable-15.0.7.exe` directly from the Downloads folder. The command used included a silent install flag, meaning the installation ran in the background without any visible prompts.
 
 **Query used to locate events:**
 ```kql
 DeviceProcessEvents
 | where DeviceName == "vm-thunt-sj"
 | where ProcessCommandLine contains "tor-browser-windows-x86_64-portable-15.0.7.exe"
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
+| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, ProcessCommandLine
 ```
-
+<img width="1219" height="175" alt="Image" src="https://github.com/user-attachments/assets/95e2e283-2c1b-486e-9c5b-7e6940d861b0" />
 ---
 
 ### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
