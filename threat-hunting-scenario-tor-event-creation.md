@@ -78,7 +78,7 @@ DeviceFileEvents
 
 ## Created By:
 - **Author Name**: Sana Jafferi
-- **Author Contact**: https://www.linkedin.com/in/joshmadakor/
+- **Author Contact**: https://www.linkedin.com/in/sanajafferi/
 - **Date**: March 15, 2026
 
 ## Validated By:
