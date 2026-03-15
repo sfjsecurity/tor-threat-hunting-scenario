@@ -53,7 +53,7 @@ DeviceProcessEvents
 
 ### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
 
-Looked for process activity tied to TOR browser executables to determine whether the browser was actually launched. Logs confirmed that `labusersj` opened the TOR browser at `[TIMESTAMP]`, with multiple child processes including `firefox.exe` and `tor.exe` being created shortly after, consistent with a successful browser launch.
+Looked for process activity tied to TOR browser executables to determine whether the browser was actually launched. Logs confirmed that `labusersj` opened the TOR browser at `2026-03-15T13:59:51.0746831Z`, with multiple child processes including `firefox.exe` and `tor.exe` being created shortly after, consistent with a successful browser launch.
 
 **Query used to locate events:**
 ```kql
@@ -63,7 +63,7 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 | order by Timestamp desc
 ```
-
+<img width="1356" height="685" alt="Image" src="https://github.com/user-attachments/assets/b0ea05c3-5fe6-4375-a4d7-6063fb87ae2c" />
 ---
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
