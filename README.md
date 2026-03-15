@@ -85,46 +85,46 @@ DeviceNetworkEvents
 
 ## Chronological Event Timeline
 
-### 1. File Download - TOR Installer
-- **Timestamp:** `[TIMESTAMP]`
+### 1. File Download — TOR Installer
+- **Timestamp:** `2026-03-15T13:53:51.8730436Z`
 - **Event:** `labusersj` downloaded `tor-browser-windows-x86_64-portable-15.0.7.exe` into the Downloads folder on `vm-thunt-sj`.
 - **Action:** File download detected.
 - **File Path:** `C:\Users\labusersj\Downloads\tor-browser-windows-x86_64-portable-15.0.7.exe`
 
-### 2. Process Execution - Silent TOR Installation
-- **Timestamp:** `[TIMESTAMP]`
+### 2. Process Execution — Silent TOR Installation
+- **Timestamp:** `2026-03-15T14:14:45.7704252Z`
 - **Event:** `labusersj` ran the TOR installer with a silent flag, causing it to install in the background with no user-facing prompts.
 - **Action:** Process creation detected.
 - **Command:** `tor-browser-windows-x86_64-portable-15.0.7.exe /S`
 - **File Path:** `C:\Users\labusersj\Downloads\tor-browser-windows-x86_64-portable-15.0.7.exe`
 
-### 3. Process Execution - TOR Browser Launched
-- **Timestamp:** `[TIMESTAMP]`
+### 3. Process Execution — TOR Browser Launched
+- **Timestamp:** `2026-03-15T13:59:51.0746831Z`
 - **Event:** `labusersj` launched the TOR browser. Associated processes `firefox.exe` and `tor.exe` were spawned, confirming a successful launch.
 - **Action:** TOR-related process creation detected.
 - **File Path:** `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
-### 4. Network Connection - TOR Entry Node
-- **Timestamp:** `[TIMESTAMP]`
-- **Event:** `tor.exe` established an outbound connection to `[REMOTE IP]` on port `9001`, confirming the device was actively communicating over the TOR network.
+### 4. Network Connection — TOR Entry Node
+- **Timestamp:** `2026-03-15T14:00:36.6169394Z`
+- **Event:** `tor.exe` established a connection to `127.0.0.1` on port `9050`, confirming the device was actively communicating over the TOR network.
 - **Action:** Successful connection detected.
 - **Process:** `tor.exe`
 - **File Path:** `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
-### 5. Additional Network Connections - Continued TOR Activity
+### 5. Additional Network Connections — Continued TOR Activity
 - **Timestamps:**
-  - `[TIMESTAMP]` - Outbound connection to `[REMOTE IP]` on port `443`.
-  - `[TIMESTAMP]` - Local loopback connection to `127.0.0.1` on port `9150`.
+  - `[TIMESTAMP]` — Outbound connection to `[REMOTE IP]` on port `443`.
+  - `[TIMESTAMP]` — Local loopback connection to `127.0.0.1` on port `9150`.
 - **Event:** Further network connections were observed, consistent with continued TOR browsing activity by `labusersj`.
 - **Action:** Multiple successful connections detected.
 
-### 6. File Creation - TOR Shopping List
-- **Timestamp:** `[TIMESTAMP]`
+### 6. File Creation — TOR Shopping List
+- **Timestamp:** `2026-03-15T14:24:52.1115663Z`
 - **Event:** `labusersj` created `tor-shopping-list.txt` on the desktop, suggesting the user may have been documenting intended purchases or activity through TOR.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\labusersj\Desktop\tor-shopping-list.txt`
 
-### 7. File Deletion - Shopping List Removed
+### 7. File Deletion — Shopping List Removed
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` deleted `tor-shopping-list.txt` from the desktop shortly after its creation, indicating a deliberate attempt to remove evidence of the activity.
 - **Action:** File deletion detected.
