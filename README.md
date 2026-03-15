@@ -68,7 +68,7 @@ DeviceProcessEvents
 
 ### 4. Searched the `DeviceNetworkEvents` Table for TOR Network Connections
 
-Investigated whether the TOR browser was used to make outbound connections over known TOR ports. At `[TIMESTAMP]`, `labusersj` on `vm-thunt-sj` successfully connected to `[REMOTE IP]` over port `9001` via `tor.exe`, located at `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`. Several additional outbound connections were also observed over port `443`.
+Investigated whether the TOR browser was used to make outbound connections over known TOR ports. At `2026-03-15T14:00:36.6169394Z`, `labusersj` on `vm-thunt-sj` successfully connected to `127.0.0.1` over port `9050` via `tor.exe`, located at `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`. Several additional outbound connections were also observed over port `443`.
 
 **Query used to locate events:**
 ```kql
@@ -80,7 +80,7 @@ DeviceNetworkEvents
 | project Timestamp, DeviceName, InitiatingProcessAccountName, ActionType, RemoteIP, RemotePort, RemoteUrl, InitiatingProcessFileName, InitiatingProcessFolderPath
 | order by Timestamp desc
 ```
-
+<img width="944" height="143" alt="Image" src="https://github.com/user-attachments/assets/951c57fd-f8a4-44a8-9340-5defadb6ba59" />
 ---
 
 ## Chronological Event Timeline
