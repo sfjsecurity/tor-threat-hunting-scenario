@@ -23,7 +23,7 @@ Following an internal review, management raised concerns that certain employees 
 
 ### 1. Searched the `DeviceFileEvents` Table
 
-Queried for any filenames containing the string "tor" on the `vm-thunt-sj` device under the account `labusersj`. Results revealed that the user had downloaded a TOR installer, which led to numerous TOR-related files appearing on the desktop. A file named `tor-shopping-list.txt` was also observed being created on the desktop at `[TIMESTAMP]`. The earliest related event was recorded at `[TIMESTAMP]`.
+Queried for any filenames containing the string "tor" on the `vm-thunt-sj` device under the account `labusersj`. Results revealed that the user had downloaded a TOR installer, which led to numerous TOR-related files appearing on the desktop. A file named `tor-shopping-list.txt` was also observed being created on the desktop at `2026-03-15T14:24:52.1115663Z`. The earliest related event was recorded at `2026-03-15T13:53:51.8730436Z`.
 
 **Query used to locate events:**
 ```kql
@@ -85,46 +85,46 @@ DeviceNetworkEvents
 
 ## Chronological Event Timeline
 
-### 1. File Download — TOR Installer
+### 1. File Download - TOR Installer
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` downloaded `tor-browser-windows-x86_64-portable-15.0.7.exe` into the Downloads folder on `vm-thunt-sj`.
 - **Action:** File download detected.
 - **File Path:** `C:\Users\labusersj\Downloads\tor-browser-windows-x86_64-portable-15.0.7.exe`
 
-### 2. Process Execution — Silent TOR Installation
+### 2. Process Execution - Silent TOR Installation
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` ran the TOR installer with a silent flag, causing it to install in the background with no user-facing prompts.
 - **Action:** Process creation detected.
 - **Command:** `tor-browser-windows-x86_64-portable-15.0.7.exe /S`
 - **File Path:** `C:\Users\labusersj\Downloads\tor-browser-windows-x86_64-portable-15.0.7.exe`
 
-### 3. Process Execution — TOR Browser Launched
+### 3. Process Execution - TOR Browser Launched
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` launched the TOR browser. Associated processes `firefox.exe` and `tor.exe` were spawned, confirming a successful launch.
 - **Action:** TOR-related process creation detected.
 - **File Path:** `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
-### 4. Network Connection — TOR Entry Node
+### 4. Network Connection - TOR Entry Node
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `tor.exe` established an outbound connection to `[REMOTE IP]` on port `9001`, confirming the device was actively communicating over the TOR network.
 - **Action:** Successful connection detected.
 - **Process:** `tor.exe`
 - **File Path:** `C:\Users\labusersj\Desktop\Tor Browser\Browser\TorBrowser\Tor\tor.exe`
 
-### 5. Additional Network Connections — Continued TOR Activity
+### 5. Additional Network Connections - Continued TOR Activity
 - **Timestamps:**
-  - `[TIMESTAMP]` — Outbound connection to `[REMOTE IP]` on port `443`.
-  - `[TIMESTAMP]` — Local loopback connection to `127.0.0.1` on port `9150`.
+  - `[TIMESTAMP]` - Outbound connection to `[REMOTE IP]` on port `443`.
+  - `[TIMESTAMP]` - Local loopback connection to `127.0.0.1` on port `9150`.
 - **Event:** Further network connections were observed, consistent with continued TOR browsing activity by `labusersj`.
 - **Action:** Multiple successful connections detected.
 
-### 6. File Creation — TOR Shopping List
+### 6. File Creation - TOR Shopping List
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` created `tor-shopping-list.txt` on the desktop, suggesting the user may have been documenting intended purchases or activity through TOR.
 - **Action:** File creation detected.
 - **File Path:** `C:\Users\labusersj\Desktop\tor-shopping-list.txt`
 
-### 7. File Deletion — Shopping List Removed
+### 7. File Deletion - Shopping List Removed
 - **Timestamp:** `[TIMESTAMP]`
 - **Event:** `labusersj` deleted `tor-shopping-list.txt` from the desktop shortly after its creation, indicating a deliberate attempt to remove evidence of the activity.
 - **Action:** File deletion detected.
