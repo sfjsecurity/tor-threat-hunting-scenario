@@ -113,8 +113,8 @@ DeviceNetworkEvents
 
 ### 5. Additional Network Connections — Continued TOR Activity
 - **Timestamps:**
-  - `[TIMESTAMP]` — Outbound connection to `[REMOTE IP]` on port `443`.
-  - `[TIMESTAMP]` — Local loopback connection to `127.0.0.1` on port `9150`.
+  - `2026-03-15T14:02:12.8328717Z` — Outbound connection to `[REMOTE IP]` on port `443`.
+  - `2026-03-15T14:02:21.0285795Z` — Local loopback connection to `127.0.0.1` on port `9150`.
 - **Event:** Further network connections were observed, consistent with continued TOR browsing activity by `labusersj`.
 - **Action:** Multiple successful connections detected.
 
