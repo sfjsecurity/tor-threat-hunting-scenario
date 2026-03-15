@@ -34,7 +34,7 @@ DeviceFileEvents
 | order by Timestamp desc
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-
+<img width="1197" height="629" alt="Image" src="https://github.com/user-attachments/assets/d05ebd1c-7ba9-4964-97ba-921faff93b3e" />
 ---
 
 ### 2. Searched the `DeviceProcessEvents` Table
